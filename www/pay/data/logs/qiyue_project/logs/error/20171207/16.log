@@ -1,0 +1,7 @@
+[2017-12-07 16:19:16][123.151.77.72][ERR]{"file":"\/home\/wwwroot\/default\/qiyue_projects\/app\/service\/WeiXinOpenIdService.php","line":90,"msg":"Undefined index: openid","errno":8,"0":"系统发生异常,请联系客服!"}
+[2017-12-07 16:44:56][221.2.158.69][ERR]{"file":"\/home\/wwwroot\/default\/qiyue_projects\/app\/service\/WeiXinPayWebService.php","line":69,"msg":"Undefined index: sign","errno":8,"0":"系统发生异常,请联系客服!"}
+[2017-12-07 16:45:05][221.2.158.69][ERR]{"file":"\/home\/wwwroot\/default\/qiyue_projects\/app\/service\/WeiXinPayWebService.php","line":69,"msg":"Undefined index: sign","errno":8,"0":"系统发生异常,请联系客服!"}
+[2017-12-07 16:45:14][221.2.158.69][ERR]{"file":"\/home\/wwwroot\/default\/qiyue_projects\/app\/service\/WeiXinPayWebService.php","line":69,"msg":"Undefined index: sign","errno":8,"0":"系统发生异常,请联系客服!"}
+[2017-12-07 16:45:21][221.2.158.69][ERR]{"file":"\/home\/wwwroot\/default\/qiyue_projects\/app\/service\/WeiXinPayWebService.php","line":69,"msg":"Undefined index: sign","errno":8,"0":"系统发生异常,请联系客服!"}
+[2017-12-07 16:46:19][221.2.158.69][ERR]{"file":"\/home\/wwwroot\/default\/qiyue_projects\/app\/service\/WeiXinPayWebService.php","line":69,"msg":"Undefined index: sign","errno":8,"0":"系统发生异常,请联系客服!"}
+[2017-12-07 16:46:21][221.2.158.69][ERR]{"file":"\/home\/wwwroot\/default\/qiyue_projects\/app\/service\/WeiXinPayWebService.php","line":69,"msg":"Undefined index: sign","errno":8,"0":"系统发生异常,请联系客服!"}

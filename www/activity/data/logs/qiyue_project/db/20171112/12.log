@@ -1,0 +1,45 @@
+[2017-11-12 12:23:20][180.122.197.89][ERR]数据库错误信息: array (
+  'code' => 6550,
+  'message' => 'ORA-06550: line 1, column 14:
+PLS-00201: identifier 'GAME_USER.p_task_reward' must be declared
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored',
+  'offset' => 13,
+  'sqltext' => 'BEGIN :ret:=game_user."p_task_reward"(:uid1,:taskid1,:money1,:ticket1,:speaker1);END;',
+)
+[2017-11-12 12:23:24][180.122.197.89][ERR]数据库错误信息: array (
+  'code' => 6550,
+  'message' => 'ORA-06550: line 1, column 14:
+PLS-00201: identifier 'GAME_USER.p_task_reward' must be declared
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored',
+  'offset' => 13,
+  'sqltext' => 'BEGIN :ret:=game_user."p_task_reward"(:uid1,:taskid1,:money1,:ticket1,:speaker1);END;',
+)
+[2017-11-12 12:23:32][180.122.197.89][ERR]数据库错误信息: array (
+  'code' => 6550,
+  'message' => 'ORA-06550: line 1, column 14:
+PLS-00201: identifier 'GAME_USER.p_task_reward' must be declared
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored',
+  'offset' => 13,
+  'sqltext' => 'BEGIN :ret:=game_user."p_task_reward"(:uid1,:taskid1,:money1,:ticket1,:speaker1);END;',
+)
+[2017-11-12 12:23:34][180.122.197.89][ERR]数据库错误信息: array (
+  'code' => 6550,
+  'message' => 'ORA-06550: line 1, column 14:
+PLS-00201: identifier 'GAME_USER.p_task_reward' must be declared
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored',
+  'offset' => 13,
+  'sqltext' => 'BEGIN :ret:=game_user."p_task_reward"(:uid1,:taskid1,:money1,:ticket1,:speaker1);END;',
+)
+[2017-11-12 12:23:40][180.122.197.89][ERR]数据库错误信息: array (
+  'code' => 6550,
+  'message' => 'ORA-06550: line 1, column 14:
+PLS-00201: identifier 'GAME_USER.p_task_reward' must be declared
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored',
+  'offset' => 13,
+  'sqltext' => 'BEGIN :ret:=game_user."p_task_reward"(:uid1,:taskid1,:money1,:ticket1,:speaker1);END;',
+)

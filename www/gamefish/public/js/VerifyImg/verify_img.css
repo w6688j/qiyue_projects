@@ -1,0 +1,105 @@
+.verify_box{
+    width: 214px;
+    position: relative;
+}
+.verify_box .verify_text{
+    position: relative;
+    height: 35px;
+    line-height: 35px;
+    font-size: 15px;
+    color: #333;
+    text-indent: 42px;
+    background: #e8e8e8 url(/public/js/VerifyImg/img/icon_safety.gif) no-repeat 10px center;
+    cursor: pointer;
+}
+.verify_box .verify_con{
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background: #e8e8e8;
+    border-radius: 0 0 3px 3px;
+    z-index: 2;
+    padding: 8px;
+    padding-bottom: 40px;
+
+    /*display: none;*/
+}
+.verify_box .verify_refresh{
+    position: absolute;
+    bottom: 15px;
+    left: 13px;
+    width: 14px;
+    height: 14px;
+    background: url(/public/js/VerifyImg/img/btn_refresh.gif) no-repeat;
+    cursor: pointer;
+}
+.verify_box .verify_check{
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    width: 68px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    background: #71b83d;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.verify_box .verify_notice{
+    font-size: 12px;
+    background: #c1c1c1;
+    color: #fff;
+    /* padding: 5px; */
+    display: block;
+    text-align: center;
+}
+.verify_box .verify_zimu{
+    color: red;
+    font-weight: bold;
+}
+.verify_box .verify_status{
+    display: block;
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    width: 17px;
+    height: 17px;
+    background: url(/public/js/VerifyImg/img/icon_state.png) no-repeat;
+}
+.verify_box .verify_success{
+    background-position: 0 0;
+}
+.verify_box .verify_error{
+    background-position: -17px 0;
+}
+
+.verify_box span.verify_sel{
+    behavior: url(/public/js/VerifyImg/PIE.htc);
+    display: inline-block;
+    border-radius: 50%;
+    background: green;
+    opacity: .6;
+
+    position: absolute;
+    z-index: 10;
+
+    filter:alpha(opacity=60);
+
+}
+
+.verify_box span.check_span_info{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 25px;
+    background: rgba(0,0,0,0.5);
+
+    background: #000\9\0;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    line-height: 25px;
+    display: none;
+}

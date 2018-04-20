@@ -1,0 +1,9 @@
+[2017-11-11 14:15:58][60.191.111.6][ERR]数据库错误信息: array (
+  'code' => 6550,
+  'message' => 'ORA-06550: line 1, column 14:
+PLS-00201: identifier 'GAME_USER.p_task_reward' must be declared
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored',
+  'offset' => 13,
+  'sqltext' => 'BEGIN :ret:=game_user."p_task_reward"(:uid1,:taskid1,:money1,:ticket1,:speaker1);END;',
+)

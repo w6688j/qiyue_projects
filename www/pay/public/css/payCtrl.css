@@ -1,0 +1,166 @@
+html {font-family: 'helvetica neue', helvetica, 'heiti sc', 'droid sans fallback'; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%; font-size: 24px; line-height: 1.5; width:100%;}
+body { margin: 0; color: #646464; background-color: #e6e6e6; -webkit-overflow-scrolling: touch; width:100%;}
+
+a,button,input,select,textarea{outline:none;}
+ul,ol{list-style:none;}em,i{font-style:normal;}
+ol,ul,input,figure{margin:0; padding:0;}
+dl,dd,h1,h2,h3,h4,h5,h6,p,form{margin:0;}
+img{display:block;width: 100%;border: 0;}
+table{ width:auto;border-collapse: collapse;border-spacing: 0;}
+a{text-decoration:none;color: #646464; -webkit-transition:transform .2s; transition:transform .2s;}
+a,button,button:active,input{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-color: transparent;}
+mark{background-color:transparent;color:inherit;}
+.hide{display:none;}
+/*reset end*/
+
+.paypage_wp{width:100%; overflow-x:hidden;}
+.paypage_wp p{font-size:.8rem;}
+.link{color:#00a0e9;}
+
+.paypage_wp .cont{position:relative; padding:0 .67rem; margin-bottom:1.17rem; background:#fff;}
+.paypage_wp .cont:after{content:""; position:absolute; left:0; bottom:-7px; width:100%; height:7px; background-size:14px;}
+.price_box{padding:1.23rem 0 1.43rem; border-bottom:1px solid #e6e6e6;}
+.totalprice{margin-top:.33rem; height:1.5rem; font-size:1rem; line-height:1.5rem; color:#ff9c00; font-weight:bold;}
+.totalprice .num{font-size:2rem; font-weight:normal;}
+.orderinfo_box{position:relative; padding-top:.87rem;}
+.orderinfo_box p{margin-bottom:.77rem;}
+.orderinfo{margin-bottom:.7rem; height:1.2rem; overflow:hidden; -webkit-transition:height .3s; transition:height .3s;}
+.orderinfo_box .open{height:1.8rem;}
+.ico_packup,.ico_dropdown{position:relative; display:block; height:1.1rem;}
+.ico_packup:before,.ico_dropdown:before{content:""; position:absolute; top:0; left:50%; margin-left:-.47rem; width:.93rem; height:.5rem; background:url(../images/btn_backup.png) no-repeat; background-size:100%; -webkit-transition:transform .3s; transition:transform .3s;}
+.ico_packup:before{-webkit-transform:rotate(180deg); transform:rotate(180deg);}
+
+.payway_box{margin-bottom:.9rem; padding:0 .67rem; min-height:3rem; background:#fff;}
+.payway{position:relative; display:block; padding:0 1.17rem 0 2.53rem; height:3rem; line-height:3rem;}
+.payway:after{content:""; position:absolute; right:-.22rem; top:50%; margin-top:-.25rem; width:.93rem; height:.5rem; background:url(../images/btn_backup.png) no-repeat; background-size:100%; -webkit-transform:rotate(-90deg); transform:rotate(-90deg);}
+.ico_wx,.ico_alipay{position:absolute; left:0; top:50%; margin-top:-1rem; width:2rem; height:2rem;}
+.ico_wx{ background:url(../images/ico_wx.png) no-repeat; background-size:100%;}
+.ico_alipay{ background:url(../images/ico_alipay.png) no-repeat; background-size:100%;}
+
+.tip_wp{padding:0 .67rem;}
+.checkbox{display: inline-block; position: relative; vertical-align: -2px; margin-right: .5em; width: 1em; height: 1em;}
+.checkbox input{position: absolute; left: 0; top: 0; width: 100%; height: 100%; opacity: 0;}
+.checkbox i{display: block; box-sizing: border-box; width: 100%; height: 100%; border: 1px solid #999;}
+.checkbox input:checked+i{background: url(../images/ico_checkbox.png) no-repeat; background-size: 100%;}
+
+/* anchor active */
+.link:active{text-decoration:underline;}
+.payway:active{-webkit-transform:scale(.98); transform:scale(.98);}
+.btn_close:active{-webkit-transform:rotate(180deg); transform:rotate(180deg);}
+/* anchor active end */
+
+/* wrong page */
+.wrongpage{padding:2.17rem 3.33rem 0; text-align:center;}
+.pic_wrong{margin:0 auto .83rem; width:6.33rem; height:6.68rem; background:url(../images/pic_wrong.png) no-repeat; background-size:100%;}
+.pic_right{margin:0 auto .83rem; width:6.33rem; height:6.68rem; background:url(../images/pic_right.png) no-repeat; background-size:100%;}
+.pic_warn{margin:0 auto .83rem; width:6.33rem; height:6.68rem; background:url(../images/pic_warn.png) no-repeat; background-size:100%;}
+.wrongpage h1{margin-bottom:.33rem; font-size:1.2rem;}
+.wrongpage p{line-height:1.03rem;}
+/* wrong page end */
+
+
+
+/* loading */
+.loading_wp{position:absolute; left:50%; top:50%; -webkit-transform:translate(-50%,-50%); transform:translate(-50%,-50%); padding:1rem 0 .65rem; width:4.67rem; background:rgba(0,0,0,.7); border-radius:.5rem; font-size:.8rem; text-align:center; color:#d9d9d9;}
+.loading{margin:0 auto .45rem; width:2.07rem; height:2.07rem; background:url(../images/loading.png) no-repeat; background-size:100%; opacity:.7; -webkit-animation:loading 1.2s steps(12) infinite both; animation:loading 1.2s steps(12) infinite both;}
+@-webkit-keyframes loading{
+	0%{-webkit-transform:rotate(0deg);}
+	100%{-webkit-transform:rotate(360deg);}
+}
+@keyframes loading{
+	0%{transform:rotate(0deg);}
+	100%{transform:rotate(360deg);}
+}
+.loading_page{position: fixed; left: 0; top: 0; right: 0; bottom: 0; background: #e6e6e6;}
+.load_gif{position: absolute; left: 50%; top: 25%; margin-left: -80px; width: 160px; height: 90px; background: url(../images/spr_load_cloud.png) no-repeat; background-size: 160px auto; -webkit-animation: cloud 1s steps(14) infinite; animation: cloud 1s steps(14) infinite;}
+.load_gif span{display: block; height: 90px; background: url(../images/spr_load_bird.png) no-repeat; background-size: 160px auto; -webkit-animation: bird 1s steps(8) infinite; animation: bird 1s steps(8) infinite;}
+.loading_txt{font-size: 12px; color: #666; text-align: center;}
+
+/*animation*/
+@-webkit-keyframes bird {
+    0% {
+      background-position:0 0;
+    }
+    100% {
+      background-position: 0 -720px;
+    }
+}
+@keyframes bird {
+    0% {
+      background-position:0 0;
+    }
+    100% {
+      background-position: 0 -720px;
+    }
+}
+
+@-webkit-keyframes cloud {
+    0% {
+      background-position:0 0;
+    }
+    100% {
+      background-position: 0 -1260px;
+    }
+}
+@keyframes cloud {
+    0% {
+      background-position:0 0;
+    }
+    100% {
+      background-position: 0 -1260px;
+    }
+}
+
+
+/* for 1081 px width screen */
+@media only screen and (min-width:1081px){
+.paypage_wp{margin:0 auto; width:540px;}
+}
+/* for 1080 px width screen */
+@media only screen and (max-width:1080px){
+html{font-size:60px;}
+}
+/* for 960 px width screen */
+@media only screen and (max-width:960px){
+html{font-size:53.33px;}
+}
+/* for 800 px width screen */
+@media only screen and (max-width:800px){
+html{font-size:44.44px;}
+}
+/* for 720 px width screen */
+@media only screen and (max-width:720px){
+html{font-size:40px;}
+}
+/* for 640 px width screen */
+@media only screen and (max-width:640px){
+html{font-size:35.56px;}
+}
+/* for 540 px width screen */
+@media only screen and (max-width:540px){
+html{font-size:30px;}
+}
+/* for 480 px width screen */
+@media only screen and (max-width:480px){
+html{font-size:26.67px;}
+}
+/* for 414 px width screen */
+@media only screen and (max-width:414px){
+html{font-size:23px;}
+}
+/* for 400 px width screen */
+@media only screen and (max-width:400px){
+html{font-size:22.22px;}
+}
+/* for 375 px width screen */
+@media only screen and (max-width:375px){
+html{font-size:20.83px;}
+}
+/* for 360 px width screen */
+@media only screen and (max-width:360px){
+html{font-size:20px;}
+}
+/* for 320 px width screen */
+@media only screen and (max-width:320px){
+html{font-size:17.78px;}
+}

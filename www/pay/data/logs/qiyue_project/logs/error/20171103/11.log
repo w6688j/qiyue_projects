@@ -1,0 +1,1 @@
+[2017-11-03 11:11:03][60.191.111.6][ERR]{"file":"\/home\/wwwroot\/default\/qiyue_projects\/app\/service\/AlipayService.php","line":219,"msg":"Undefined index: sign","errno":8,"0":"系统发生异常,请联系客服!"}

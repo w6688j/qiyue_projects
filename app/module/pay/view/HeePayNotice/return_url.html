@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>PP游戏支付通知</title>
+
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background: #eeeeee;
+        }
+        div.wrap{
+            width: 280px;
+            height:300px;
+            margin: 0 auto;
+            /*border:1px solid red;*/
+            margin-top: 100px;
+        }
+        
+        div.right img,div.error img{
+            float: left;
+            width: 70px;
+        }
+        
+        div.right div,div.error div{
+            font-weight: bold;
+            font-size: 20px;
+            margin-left: 13px;
+            margin-top: 4px;
+            /* border: 1px solid red; */
+            display: block;
+            float: left;
+            color: #adadad;
+
+        }
+        div.right div span{
+            color: #2aa515;
+            font-size: 25px;
+        }
+        div.info a{
+            width: 120px;
+            display: block;
+            margin-left: 20px;
+            /*border: 1px solid red;*/
+            float: left;
+            margin-top: 6px;
+            color: #9E9E9E;
+        }
+        div.right a:hover{
+            color:green;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrap">
+
+    {% if return_array.status %}
+    <div class="info right">
+        <img src="/public/images/duihao.png" />
+        <div>支付成功,您成功支付 <span>{{return_array.data.pay_amt}}</span> 元 </div>
+        <a href="http://www.pp158.com" target="_blank">返回首页>></a>
+    </div>
+
+    {% else %}
+
+    <div class="info error">
+        <img src="/public/images/cuowu.png" />
+        <div>支付失败,请重新支付 </div>
+        <a href="http://www.pp158.com" target="_blank">返回首页>></a>
+    </div>
+    {% endif %}
+</div>
+</body>
+</html>

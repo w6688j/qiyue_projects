@@ -1,0 +1,6 @@
+[2017-11-03 06:00:01][61.184.236.14][ERR]{"file":"\/home\/wwwroot\/default\/qiyue_projects\/app\/service\/RegisterUserService.php","line":64,"msg":"Undefined variable: _SESSION","errno":8,"0":"系统发生异常,请联系客服!"}
+[2017-11-03 06:10:41][61.184.236.14][ERR]{"file":"\/home\/wwwroot\/default\/qiyue_projects\/app\/service\/RegisterUserService.php","line":64,"msg":"Undefined variable: _SESSION","errno":8,"0":"系统发生异常,请联系客服!"}
+[2017-11-03 06:12:59][222.240.143.118][ERR]{"file":"\/home\/wwwroot\/default\/qiyue_projects\/app\/service\/RegisterUserService.php","line":64,"msg":"Undefined variable: _SESSION","errno":8,"0":"系统发生异常,请联系客服!"}
+[2017-11-03 06:47:16][58.42.232.36][ERR]{"file":"\/home\/wwwroot\/default\/qiyue_projects\/app\/service\/RegisterUserService.php","line":64,"msg":"Undefined variable: _SESSION","errno":8,"0":"系统发生异常,请联系客服!"}
+[2017-11-03 06:48:05][222.240.143.118][ERR]{"file":"\/home\/wwwroot\/default\/qiyue_projects\/app\/service\/RegisterUserService.php","line":64,"msg":"Undefined variable: _SESSION","errno":8,"0":"系统发生异常,请联系客服!"}
+[2017-11-03 06:53:15][61.184.236.14][ERR]{"file":"\/home\/wwwroot\/default\/qiyue_projects\/app\/service\/RegisterUserService.php","line":64,"msg":"Undefined variable: _SESSION","errno":8,"0":"系统发生异常,请联系客服!"}

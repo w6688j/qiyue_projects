@@ -1,0 +1,4 @@
+[2017-11-02 13:58:45][218.31.134.109][ERR]{"file":"\/home\/wwwroot\/default\/qiyue_projects\/app\/module\/activity\/service\/GiftService.php","line":74,"msg":"Undefined index: old_start_time","errno":8,"0":"系统发生异常,请联系客服!"}
+[2017-11-02 13:59:08][60.190.4.102][ERR]{"file":"\/home\/wwwroot\/default\/qiyue_projects\/app\/module\/activity\/service\/GiftService.php","line":74,"msg":"Undefined index: old_start_time","errno":8,"0":"系统发生异常,请联系客服!"}
+[2017-11-02 13:59:54][218.2.6.150][ERR]{"file":"\/home\/wwwroot\/default\/qiyue_projects\/app\/module\/activity\/service\/GiftService.php","line":187,"msg":"Undefined index: new_start_time","errno":8,"0":"系统发生异常,请联系客服!"}
+[2017-11-02 13:59:58][111.124.189.183][ERR]{"file":"\/home\/wwwroot\/default\/qiyue_projects\/app\/module\/activity\/service\/GiftService.php","line":187,"msg":"Undefined index: new_start_time","errno":8,"0":"系统发生异常,请联系客服!"}

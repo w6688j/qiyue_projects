@@ -1,0 +1,6 @@
+[2017-12-22 14:29:37][39.106.244.24][ERR]{"file":"\/home\/wwwroot\/default\/qiyue_projects\/app\/service\/WeiXinOpenIdService.php","line":90,"msg":"Undefined index: openid","errno":8,"0":"系统发生异常,请联系客服!"}
+[2017-12-22 14:41:29][47.93.110.177][ERR]{"file":"\/home\/wwwroot\/default\/qiyue_projects\/app\/service\/WeiXinOpenIdService.php","line":90,"msg":"Undefined index: openid","errno":8,"0":"系统发生异常,请联系客服!"}
+[2017-12-22 14:43:33][121.42.241.59][ERR]{"file":"\/home\/wwwroot\/default\/qiyue_projects\/app\/service\/WeiXinOpenIdService.php","line":90,"msg":"Undefined index: openid","errno":8,"0":"系统发生异常,请联系客服!"}
+[2017-12-22 14:45:33][39.104.29.35][ERR]{"file":"\/home\/wwwroot\/default\/qiyue_projects\/app\/service\/WeiXinOpenIdService.php","line":90,"msg":"Undefined index: openid","errno":8,"0":"系统发生异常,请联系客服!"}
+[2017-12-22 14:47:44][39.106.244.4][ERR]{"file":"\/home\/wwwroot\/default\/qiyue_projects\/app\/service\/WeiXinOpenIdService.php","line":90,"msg":"Undefined index: openid","errno":8,"0":"系统发生异常,请联系客服!"}
+[2017-12-22 14:49:52][39.106.244.24][ERR]{"file":"\/home\/wwwroot\/default\/qiyue_projects\/app\/service\/WeiXinOpenIdService.php","line":90,"msg":"Undefined index: openid","errno":8,"0":"系统发生异常,请联系客服!"}

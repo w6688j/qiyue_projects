@@ -1,0 +1,1 @@
+[2017-12-19 04:03:26][60.190.53.222][ERR]{"file":"\/home\/wwwroot\/default\/qiyue_projects\/app\/core\/BaseSocket.php","line":29,"msg":"fsockopen(): unable to connect to 10.46.66.83:8200 (Connection timed out)","errno":2,"0":"系统发生异常,请联系客服!"}

@@ -1,0 +1,1 @@
+[2018-01-14 20:21:02][123.151.148.57][ERR]{"file":"\/home\/wwwroot\/default\/qiyue_projects\/app\/service\/WeiXinOpenIdService.php","line":90,"msg":"Undefined index: openid","errno":8,"0":"系统发生异常,请联系客服!"}

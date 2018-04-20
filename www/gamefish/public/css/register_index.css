@@ -1,0 +1,273 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.Validform_checktip {
+    /*margin-left: 8px;*/
+    line-height: 30px;
+    height: 30px;
+    overflow: hidden;
+    color: #999;
+    font-size: 14px;
+}
+
+.Validform_wrong {
+    color: red;
+    padding-left: 20px;
+    white-space: nowrap;
+    background: url(http://gameupdate.coobar.com/coobardata/update4/lobby/ppimg/images/error.png) no-repeat left center;
+}
+
+.Validform_right {
+    color: #71b83d;
+    padding-left: 20px;
+    background: url(http://gameupdate.coobar.com/coobardata/update4/lobby/ppimg/images/right.png) no-repeat left center;
+}
+
+* {
+    transition: all 200ms;
+    font-family: "微软雅黑"
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: 14px;
+    font-family: "微软雅黑", sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%
+}
+
+form {
+    margin: 10px 10px 60px 10px;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: #333
+}
+
+*:after, *:before {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.login {
+    /*height: 380px;*/
+    margin: 0 auto;
+}
+
+.item {
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 8px;
+    color: #333;
+    clear: both;
+}
+
+.label {
+    float: left;
+    display: block;
+    width: 60px;
+    font-size: 14px;
+    text-align: justify;
+    margin-right: 5px;
+    color: #333;
+    font-weight: normal;
+    line-height: 30px;
+}
+
+.input {
+    float: left;
+    margin-right: 5px;
+}
+
+input {
+    border-radius: 5px;
+}
+
+input[type='text'], input[type='password'] {
+    outline: none;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #d5d5d5;
+    margin: 0px;
+    padding: 0px;
+    width: 208px;
+    display: block;
+    margin-right: 0px;
+    text-indent: 8px;
+    float: left;
+    font-size: 13px;
+}
+
+.mini-input input[type='text'] {
+    width: 100px;
+    display: inline-block
+}
+
+input[type]:focus {
+    outline: 1px solid #f1f1f1;
+    border: 1px solid #d3d3d3;
+    box-shadow: 0px 0px 10px 2px rgba(57, 169, 207, .5) \9 \0;
+    outline: none; /*border:none;*/
+}
+
+.error {
+    color: #900
+}
+
+.error .label {
+    color: #900
+}
+
+.error input {
+    border: 1px solid #900;
+    color: #900
+}
+
+.error .msg {
+    color: #900;
+    font-style: normal;
+    text-shadow: none
+}
+
+.get_phone_code {
+    display: inline-block;
+    color: #999;
+    width: 110px;
+    text-align: center;
+    padding: 0px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 0px
+}
+
+.get_phone_code img {
+    width: 110px;
+    height: 30px;
+}
+
+.get_phone_code:hover {
+    text-decoration: none;
+    color: #23527c
+}
+
+.get_phone_code:focus {
+    text-decoration: none
+}
+
+.submit {
+    cursor: not-allowed;
+    padding: 5px 68px;
+    border-radius: 5px;
+    background: #ccc;
+    color: #999;
+    box-shadow: none;
+    border: none;
+    position: relative;
+    left: 70px;
+    font-size: 18px
+}
+
+.clickable.submit {
+    cursor: pointer;
+    background: #0189DD;
+    color: #fff
+}
+
+.clickable.submit:hover, .clickable.submit:focus, .clickable.submit:active {
+    /*color: #999;*/
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.click_send {
+}
+
+.msg, label.error {
+    position: absolute;
+    left: 285px;
+    width: 240px;
+    top: 0px;
+    color: #900;
+    font-size: 13px;
+}
+
+.msg img, label.error img {
+    margin-right: 5px;
+    position: relative;
+    top: 1px;
+    height: 11px;
+    width: 11px;
+}
+
+.msg .info, label.info {
+    color: #333;
+    font-style: normal
+}
+
+input[name='license'] {
+    position: relative;
+    left: 0px;
+    margin-left: 70px;
+    *margin-left: 0px;
+    display: inline-block;
+}
+
+#license {
+    position: relative;
+    top: 2px;
+}
+
+.read_license {
+    color: #333;
+    text-decoration: underline
+}
+
+.read_license:hover {
+    color: #900
+}
+
+.logo {
+    position: absolute;
+    left: 120px;
+    margin-left: 0px;
+    top: -120px;
+    width: 200px
+}
+
+.error-img {
+    position: absolute;
+    top: 5px;
+}
+
+/*label.error{text-indent: 18px;}*/
+.error-info {
+    color: #900;
+    text-align: center;
+}
+
+.radio {
+    margin-right: 30px;
+    float: left;
+}
+
+.radio label {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.placeholder-text {
+    color: #a5a5a5;
+}

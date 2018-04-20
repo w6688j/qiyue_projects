@@ -1,0 +1,54 @@
+[2017-11-12 13:02:48][121.10.161.211][ERR]数据库错误信息: array (
+  'code' => 6550,
+  'message' => 'ORA-06550: line 1, column 14:
+PLS-00201: identifier 'GAME_USER.p_task_reward' must be declared
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored',
+  'offset' => 13,
+  'sqltext' => 'BEGIN :ret:=game_user."p_task_reward"(:uid1,:taskid1,:money1,:ticket1,:speaker1);END;',
+)
+[2017-11-12 13:02:51][121.10.161.211][ERR]数据库错误信息: array (
+  'code' => 6550,
+  'message' => 'ORA-06550: line 1, column 14:
+PLS-00201: identifier 'GAME_USER.p_task_reward' must be declared
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored',
+  'offset' => 13,
+  'sqltext' => 'BEGIN :ret:=game_user."p_task_reward"(:uid1,:taskid1,:money1,:ticket1,:speaker1);END;',
+)
+[2017-11-12 13:03:03][121.10.161.211][ERR]数据库错误信息: array (
+  'code' => 6550,
+  'message' => 'ORA-06550: line 1, column 14:
+PLS-00201: identifier 'GAME_USER.p_task_reward' must be declared
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored',
+  'offset' => 13,
+  'sqltext' => 'BEGIN :ret:=game_user."p_task_reward"(:uid1,:taskid1,:money1,:ticket1,:speaker1);END;',
+)
+[2017-11-12 13:11:05][121.10.161.211][ERR]数据库错误信息: array (
+  'code' => 6550,
+  'message' => 'ORA-06550: line 1, column 14:
+PLS-00201: identifier 'GAME_USER.p_task_reward' must be declared
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored',
+  'offset' => 13,
+  'sqltext' => 'BEGIN :ret:=game_user."p_task_reward"(:uid1,:taskid1,:money1,:ticket1,:speaker1);END;',
+)
+[2017-11-12 13:11:09][121.10.161.211][ERR]数据库错误信息: array (
+  'code' => 6550,
+  'message' => 'ORA-06550: line 1, column 14:
+PLS-00201: identifier 'GAME_USER.p_task_reward' must be declared
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored',
+  'offset' => 13,
+  'sqltext' => 'BEGIN :ret:=game_user."p_task_reward"(:uid1,:taskid1,:money1,:ticket1,:speaker1);END;',
+)
+[2017-11-12 13:11:21][121.10.161.211][ERR]数据库错误信息: array (
+  'code' => 6550,
+  'message' => 'ORA-06550: line 1, column 14:
+PLS-00201: identifier 'GAME_USER.p_task_reward' must be declared
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored',
+  'offset' => 13,
+  'sqltext' => 'BEGIN :ret:=game_user."p_task_reward"(:uid1,:taskid1,:money1,:ticket1,:speaker1);END;',
+)

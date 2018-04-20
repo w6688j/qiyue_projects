@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow: hidden;">
+<head>
+    <meta charset="UTF-8">
+    <title>新老用户反馈活动</title>
+    <link type="text/css" href="/public/gift/css/gift.css?id={{time}}" rel="stylesheet"/>
+    <script type="text/javascript" src="http://libs.baidu.com/jquery/1.8.2/jquery.min.js"></script>
+</head>
+<body style="overflow: hidden;">
+
+
+<div class="wrap">
+
+    <div class="question">
+        <div class="img"></div>
+
+        <div class="info">
+            <img src="/public/gift/images/jiantou.png" />
+            活动赠送的金币不能兑换奖品，只可作为游戏消耗。若存在违规行为，官方有权扣除相应金币。
+            <span> 本活动的最终解释权归PP游戏中心所有</span>
+        </div>
+
+    </div>
+    <div class="left">
+        <div class="old_btn" onclick="Gift.selectBox(1)">
+            <div class="old_anniu yes_press">
+                历史充值回馈
+            </div>
+            <!--<img src="/public/gift/images/old_btn1.png" class="old_btn1"/>-->
+            <!--<img src="/public/gift/images/old_btn2.png" class="old_btn2"/>-->
+        </div>
+        <div class="new_btn" onclick="Gift.selectBox(2)">
+            <div class="new_anniu no_press">
+                新手七日好礼
+            </div>
+
+            <!--<img src="/public/gift/images/new_btn1.png" class="new_btn1"/>-->
+            <!--<img src="/public/gift/images/new_btn2.png" class="new_btn2"/>-->
+        </div>
+    </div>
+    <div class="right">
+        <div class="box">
+            <!--<img class="top_header" src="/public/gift/images/top_header.png"/>-->
+            <div class="inner_box old_box">
+                <ul class="header">
+                    <li>累计金额(元)</li>
+                    <li>奖励</li>
+                    <li>操作</li>
+                </ul>
+                {% for key, value in config.old_player %}
+                <ul class="border" {% if key==4 %} style="border: none;" {% endif%}>
+                    <li class="color_black">{{ value.money }}</li>
+                    <li class="color_black">{{ value.jinbi/10000}}W</li>
+                    <li>
+
+
+                        {% if old_time_flag %}
+                        {% if value.is_get==1 %}
+                        <span class="yellow_bg btn_img" onclick="Gift.getGrade(this,1,'{{key+1}}')">可领取</span>
+                        {% elseif value.is_get==2 %}
+                        <span class="gray_bg btn_img">已领取</span>
+                        {% else %}
+                        <span class="gray_bg btn_img">未达到</span>
+                        {% endif %}
+                        {% else %}
+                        <!--不在时间范围内,让你是可领取状态-->
+                        <span class="gray_bg btn_img">可领取</span>
+                        {% endif %}
+
+                        <!--<img src="/public/gift/images/btn_ylq.png" class="btn_img"/>-->
+
+                    </li>
+                </ul>
+
+                {% endfor %}
+            </div>
+            <div class="inner_box new_box" style="display: none;">
+                <div class="center">
+                    <div class="item fl">
+                        <div class="img_div">
+                            <img src="/public/gift/images/money.png"/>
+                        </div>
+                        <p>金币X{{config.new_player.jinbi/10000}}W</p>
+                    </div>
+                    <div class="plus fl"> +</div>
+                    <div class="item fl">
+                        <div class="img_div">
+                            <img src="/public/gift/images/vip.png"/>
+                        </div>
+                        <p>VIP{{config.new_player.vip}}X{{config.new_player.vip_days}}天</p>
+                    </div>
+                    <div class="plus fl"> +</div>
+                    <div class="item fl">
+                        <div class="img_div">
+                            <img src="/public/gift/images/qb.png"/>
+                        </div>
+                        <p>{{config.new_player.qb}}Q币</p>
+                    </div>
+                </div>
+
+                <h2 class="jindu">当前进度 :{{config.new_player.user_login_num}}/{{config.new_player.login_day}} </h2>
+
+                {% if new_time_flag %}
+                      {% if config.new_player.is_get ==1 %}
+                        <div class="img_box_lg yellow_bg" onclick="Gift.getGrade(this,2,0)"> 可领取 </div>
+                       {% elseif config.new_player.is_get==2 %}
+                             <div class="img_box_lg gray_bg">已领取</div>
+                      {% else %}
+                            <div class="img_box_lg gray_bg"> 未达到 </div>
+                      {% endif %}
+                {% else %}
+                  <div class="img_box_lg gray_bg"> 可领取 </div>
+                {% endif %}
+            </div>
+
+        </div>
+
+        <span class="old_span_notice notice">
+             <div>活动时间:{{old_start_time}} - {{old_end_time}}</div>
+            <div>
+                活动详情: <b>1.</b>活动开始前，根据历史充值的累计充值金额可获得金币奖励<br/>
+                <b>2.</b>可领取多档充值奖励（如：历史充值200，可同时获得充值50元和200元奖励）
+
+            </div>
+        </span>
+        <span class="new_span_notice notice">
+              <div>活动时间:{{new_start_time}} - {{new_end_time}}</div>
+            <!--<div>-->
+                <!--活动详情: <b>1.</b>活动开始前，根据历史充值的累计金额可获得金币奖励<br/>-->
+                  <!--<b>2</b>：可领取多档充值奖励（如：历史充值200，可同时获得充值50元和200元奖励）-->
+            <!--</div>-->
+             <div>活动详情: 自活动上线,新注册用户连续登陆{{config.new_player.login_day}}天,即可领取豪华礼包</div>
+        </span>
+    </div>
+</div>
+
+
+<!--加载layer     -->
+<script type="text/javascript" src="/public/gift/plugin/layer/layer.js"></script>
+<script type="text/javascript">
+    //layui.use('layer', function(){
+    //        layer.ready(function(){
+    //             layer.msg('木有了，看看别的吧！',{icon:'5'});
+    //        });
+    //    });
+    // layer.msg('数据处理中...', {time: 0, icon: 16, shade: [0.8, '#393D49'], scrollbar: false});
+
+    var old_time_flag = '{{old_time_flag}}';
+    var new_time_flag = '{{new_time_flag}}';
+
+    var Gift = {
+        selectBox: function (type) {
+            $(".old_anniu").removeClass("yes_press").addClass("no_press");
+            $(".new_anniu").removeClass("yes_press").addClass("no_press");
+            $("span.notice").hide();
+            $(".old_box").hide();
+            $(".new_box").hide();
+            if (type == 1) {
+                //显示老用户
+                $(".old_anniu").addClass("yes_press");
+                $(".old_box").show();
+                $("span.old_span_notice").show();
+            } else {
+                //显示新用户
+                $(".new_anniu").addClass("yes_press");
+                $("span.new_span_notice").css({"display":"block"});
+                $(".new_box").show();
+
+            }
+        },
+
+        //领取奖励
+        getGrade: function (obj,grade_type, grade_level) {
+            if (!this.checkTime(grade_type)) {
+                return false;
+            }
+            $.ajax({
+                url: '/Gift/getGrade',//请求接口
+                data: {grade_type: grade_type, grade_level: grade_level},
+                type: 'post',
+                dataType: 'json',
+                beforeSend: function () {
+                    layer.msg('正在领取奖励', {icon: 16});
+                },
+                success: function (res) {
+                    if (res.status) {
+
+                        if(grade_type==2){
+                            layer.msg(res.info, {icon: 1,time: 2000});
+                        }else{
+                            layer.msg(res.info, {icon: 1});
+                        }
+                        $(obj).removeClass("yellow_bg ").addClass("gray_bg").text("已领取");
+
+                        $(obj).removeAttr("onclick");
+                    } else {
+                        layer.msg(res.info, {icon: 2});
+                    }
+                },
+                error: function () {
+                    layer.msg('操作失败，请重试', {time: 1500, icon: 7, shade: [0.8, '#393D49'], scrollbar: false});
+                }
+            });
+
+        },
+
+        checkTime: function (type) {
+
+            if(type==1){
+                //这里是老用户
+                if (!old_time_flag) {
+                    layer.ready(function () {
+                        layer.msg('历史充值活动已结束!', {icon: '5'});
+                    });
+                    return false;
+                }
+            }else  if(type==2){
+                //这里是新用户
+                if (!new_time_flag) {
+                    layer.ready(function () {
+                        layer.msg('新手七日好礼活动已结束!', {icon: '5'});
+                    });
+                    return false;
+                }
+            }
+
+
+            return true;
+        }
+
+
+    };
+
+    $(function () {
+        //上来就是检测一下时间
+        //Gift.checkTime();
+    })
+
+</script>
+</body>
+</html>

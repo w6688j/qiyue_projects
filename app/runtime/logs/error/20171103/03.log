@@ -1,0 +1,5 @@
+[2017-11-03 03:04:58][61.133.193.250][ERR]{"file":"\/home\/wwwroot\/default\/qiyue_projects\/app\/lib\/IllegalCheck\/IllegalCheck.php","line":52,"msg":"strpos(): Empty needle","errno":2,"0":"系统发生异常,请联系客服!"}
+[2017-11-03 03:05:08][61.133.193.250][ERR]{"file":"\/home\/wwwroot\/default\/qiyue_projects\/app\/lib\/IllegalCheck\/IllegalCheck.php","line":52,"msg":"strpos(): Empty needle","errno":2,"0":"系统发生异常,请联系客服!"}
+[2017-11-03 03:06:20][61.133.193.250][ERR]{"file":"\/home\/wwwroot\/default\/qiyue_projects\/app\/service\/RegisterUserService.php","line":64,"msg":"Undefined variable: _SESSION","errno":8,"0":"系统发生异常,请联系客服!"}
+[2017-11-03 03:35:27][222.188.114.66][ERR]{"file":"\/home\/wwwroot\/default\/qiyue_projects\/app\/service\/RegisterUserService.php","line":64,"msg":"Undefined variable: _SESSION","errno":8,"0":"系统发生异常,请联系客服!"}
+[2017-11-03 03:43:00][218.76.66.226][ERR]{"file":"\/home\/wwwroot\/default\/qiyue_projects\/app\/service\/RegisterUserService.php","line":64,"msg":"Undefined variable: _SESSION","errno":8,"0":"系统发生异常,请联系客服!"}

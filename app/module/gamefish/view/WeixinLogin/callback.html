@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>微信登录</title>
+    <script type="text/javascript" src="/public/js/jquery.v1.7.1.js"></script>
+    <script type="text/javascript" src="/public/js/jquery.json.js"></script>
+</head>
+<body>
+
+{% if return_array.status %}
+<script type="text/javascript">
+    var openid = "{{return_array.data.openid}}";
+    var qq_nickname = "{{return_array.data.nickname}}";
+
+    function vc_qq_auto_login() {
+        var obj = new Object();
+        obj.cmd = "wechatlogin";
+        obj.str1 = openid;
+        obj.str2 = qq_nickname;
+        var msg = $.toJSON(obj);
+        var url = "app://" + msg;
+        window.location.href = url;
+    }
+
+    $(document).ready(function () {
+        vc_qq_auto_login();
+    });
+
+</script>
+<div style="text-align: center;margin-top: 100px;">正在登录中...</div>
+
+{% else %}
+
+
+<div style="text-align: center;margin-top: 100px;">{{ return_array.msg }}</div>
+
+{% endif %}
+
+</body>
+</html>

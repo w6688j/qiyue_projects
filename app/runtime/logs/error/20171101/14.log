@@ -1,0 +1,2 @@
+[2017-11-01 14:03:01][127.0.0.1][ERR]{"file":"D:\\phpStudy\\WWW\\company\\qiyue_project\\trunk\\app\\service\\RegisterUserService.php","line":66,"msg":"Undefined variable: _SESSION","errno":8,"0":"系统发生异常,请联系客服!"}
+[2017-11-01 14:05:03][127.0.0.1][ERR]{"file":"D:\\phpStudy\\WWW\\company\\qiyue_project\\trunk\\app\\service\\RegisterUserService.php","line":64,"msg":"Undefined variable: _SESSION","errno":8,"0":"系统发生异常,请联系客服!"}

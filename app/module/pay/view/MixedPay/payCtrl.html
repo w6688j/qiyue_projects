@@ -1,0 +1,43 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <title>PP游戏支付</title>
+
+    <link rel="stylesheet" href="/public/css/payCtrl.css">
+
+</head>
+<body>
+<div  class="paypage_wp">
+    <div class="cont">
+        <div class="price_box">
+            <p data-bind="text:tradeMap().name">PP游戏支付</p>
+            <p class="totalprice"><i data-bind="text:tradeMap().priceTxt" class="num">{{total_fee}}</i>元</p>
+        </div>
+        <div class="orderinfo_box">
+            <div class="orderinfo open">
+                <p>下单帐号：
+                    <span data-bind="text:userInfo.username">{{trade_no}}</span>
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <div data-bind="foreach :paytypename" class="payway_box">
+        <a  class="payway" href="{{alipay_url}}" data-tradeid="1403" data-clickid="N2" >
+            <i data-bind="css:$data.ico" class="ico_wx ico_alipay"></i>
+            <span data-bind="text:$data.name">支付宝支付</span>
+        </a>
+
+        <!--<a class="payway" href="{{weixin_url}}" data-tradeid="1403" data-clickid="W4">
+            <i data-bind="css:$data.ico" class="ico_wx"></i>
+            <span data-bind="text:$data.name">微信支付(支持6.0.2及以上版本使用)</span>
+        </a>-->
+    </div>
+
+</div>
+
+</body></html>

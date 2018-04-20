@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>PP游戏账单支付</title>
+    <link rel="stylesheet" href="/public/css/payCtrl.css">
+</head>
+<body>
+
+<!--{% if return_arr.status %}-->
+<section data-bind="visible:tipViews.index()==3" class="wrongpage">
+    <div class="pic_right"></div>
+    <p data-bind="html:tipViews.msg">{{return_arr.msg}}</p>
+</section>
+<!--{% else %}-->
+<section data-bind="visible:tipViews.index()==3" class="wrongpage">
+    <div class="pic_warn"></div>
+    <p data-bind="html:tipViews.msg">{{return_arr.msg}}</p>
+</section>
+<!--{% endif %}-->
+
+
+<!--{% if return_arr.status %}-->
+
+<script type="text/javascript">
+
+    //调用微信JS api 支付
+    function jsApiCall() {
+        WeixinJSBridge.invoke(
+            'getBrandWCPayRequest', {
+                "appId":"{{js_request.appId}}",
+                "timeStamp":"{{js_request.timeStamp}}",
+                "nonceStr":"{{js_request.nonceStr}}",
+                "package":"{{js_request.package}}",
+                "signType":"MD5",
+                "paySign":"{{js_request.paySign}}"
+            },
+            function (res) {
+                // WeixinJSBridge.log(res.err_msg);
+                if (res.err_msg == 'get_brand_wcpay_request:cancel') {
+                    alert("取消付款");
+                    setTimeout(function () {
+                        WeixinJSBridge.call('closeWindow');
+                    }, 100);//立即关闭微信当前页面
+                } else if (res.err_msg == "get_brand_wcpay_request:fail") {
+                    //alert(res.err_code + res.err_desc +"  "+ res.err_msg);
+                    alert("支付失败");
+                    setTimeout(function () {
+                        WeixinJSBridge.call('closeWindow');
+                    }, 100);
+                } else if (res.err_msg == "get_brand_wcpay_request:ok") {
+                    alert("支付成功");
+                    setTimeout(function () {
+                        WeixinJSBridge.call('closeWindow');
+                    }, 100);
+                } else {
+                    alert(res.err_msg);
+
+                }
+            }
+        );
+    }
+
+    function callpay() {
+        if (typeof WeixinJSBridge == "undefined") {
+            if (document.addEventListener) {
+                document.addEventListener('WeixinJSBridgeReady', jsApiCall, false);
+            } else if (document.attachEvent) {
+                document.attachEvent('WeixinJSBridgeReady', jsApiCall);
+                document.attachEvent('onWeixinJSBridgeReady', jsApiCall);
+            }
+        } else {
+            jsApiCall();
+        }
+    }
+</script>
+<script type="text/javascript">
+    window.onload = function () {
+        if (typeof WeixinJSBridge == "undefined") {
+            if (document.addEventListener) {
+                document.addEventListener('WeixinJSBridgeReady', editAddress, false);
+            } else if (document.attachEvent) {
+                document.attachEvent('WeixinJSBridgeReady', editAddress);
+                document.attachEvent('onWeixinJSBridgeReady', editAddress);
+            }
+        } else {
+            //editAddress();
+        }
+    };
+
+</script>
+<script type="text/javascript">
+    callpay();
+</script>
+
+
+<!--{% endif %}-->
+
+
+</body>
+</html>
